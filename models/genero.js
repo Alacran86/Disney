@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   genero.init({
     nombre: DataTypes.STRING,
-    imgen: DataTypes.STRING,
+    imagen: DataTypes.STRING,
     peliculasAsociadas: DataTypes.STRING
   }, {
     sequelize,

@@ -1,11 +1,11 @@
 const express = require("express");
 const Router = express.Router();
-const { list } = require("./../controllers/list");
-const { byid } = require("./../controllers/single");
-const { findByFilter } = require("./../controllers/find");
-const { createCharacter } = require("./../controllers/create");
-const { update } = require("./../controllers/update");
-const { del } = require("./../controllers/delete");
+const { list } = require("./../controllers/characters/list");
+const { byid } = require("./../controllers/characters/single");
+const { findByFilter } = require("./../controllers/characters/find");
+const { createCharacter } = require("../controllers/characters/create");
+const { update } = require("./../controllers/characters/update");
+const { del } = require("./../controllers/characters/delete");
 
 Router.get("/", list);
 Router.get("/byid/:id", byid);

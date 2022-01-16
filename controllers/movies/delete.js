@@ -1,9 +1,9 @@
-const db = require("../models");
-const personaje = db.character;
+const db = require("../../models");
+const pelicula = db.movie;
 
 const del = async (req, res) => {
   try {
-    await personaje.destroy({
+    await pelicula.destroy({
       where: { id: req.params.id },
     });
     res.json({ success: "Se ha eliminado correctamente" });

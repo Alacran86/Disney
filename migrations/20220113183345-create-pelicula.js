@@ -11,6 +11,9 @@ module.exports = {
       titulo: {
         type: Sequelize.STRING
       },
+      imagen: {
+        type: Sequelize.STRING
+      },
       fechaCreacion: {
         type: Sequelize.STRING
       },
@@ -18,6 +21,9 @@ module.exports = {
         type: Sequelize.STRING
       },
       personajesAsociados: {
+        type: Sequelize.STRING
+      },
+      genero: {
         type: Sequelize.STRING
       },
       createdAt: {

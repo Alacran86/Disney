@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../../models");
 const personaje = db.character;
 
 const findByFilter = async (req, res) => {

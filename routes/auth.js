@@ -1,7 +1,7 @@
 const express = require("express");
 const Router = express.Router();
-const { register } = require("./../controllers/register");
-const { login } = require("./../controllers/login");
+const { register } = require("./../controllers/characters/register");
+const { login } = require("./../controllers/characters/login");
 const { check } = require("express-validator");
 
 Router.post("/login", login);

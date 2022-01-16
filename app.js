@@ -8,6 +8,8 @@ const { checkToken } = require("./middlewares/logged");
 
 const authRouter = require("./routes/auth");
 const charactersRouter = require("./routes/characters");
+const moviesRouter = require("./routes/movies");
+
 
 const indexRouter = require("./routes/index");
 
@@ -29,6 +31,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/auth", authRouter);
 app.use("/characters", checkToken, charactersRouter);
+app.use("/movies", checkToken, moviesRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

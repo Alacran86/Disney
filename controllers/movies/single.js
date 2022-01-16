@@ -1,12 +1,12 @@
-const db = require("../models");
-const personaje = db.character;
+const db = require("../../models");
+const pelicula = db.movie;
 
 const byid = async (req, res) => {
   try {
-    const characters = await personaje.findOne({
+    const movie = await pelicula.findOne({
       where: { id: req.params.id },
     });
-    res.json(characters);
+    res.json(movie);
   } catch (err) {
     console.error(err);
   }
