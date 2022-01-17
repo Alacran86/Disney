@@ -4,23 +4,20 @@
     "password": null,
     "database": "ApiDisney",
     "host": "localhost",
-    "dialect": "mysql",
-    "port": 3307
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
     "database": "ApiDisney_test",
     "host": "localhost",
-    "dialect": "mysql",
-    "port": 3307
+    "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": null,
     "database": "ApiDisney_production",
     "host": "localhost",
-    "dialect": "mysql",
-    "port": 3307
+    "dialect": "mysql"
   }
 }
